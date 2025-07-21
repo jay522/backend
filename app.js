@@ -104,7 +104,7 @@ console.log(roomName)
   };
 
   try {
-    const token = jwt.sign(payload, JITSI_PRIVATE_KEY, {
+    const token = jwt.sign(payload, jitsiPrivateKey, {
       algorithm: "RS256",
       header:header,
     });
